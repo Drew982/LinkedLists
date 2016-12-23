@@ -5,20 +5,12 @@ package linkedlist;
  */
 public class LinkedList
 {
-    Name data;
+    public String name;
+    public LinkedList next;
 
-    public LinkedList(Name data)
+    public LinkedList(String name)
     {
-        this.data = data;
-    }
-
-    public Name getData()
-    {
-        return data;
-    }
-
-    public void setData(Name data)
-    {
-        this.data = data;
+        this.name = name;
+        this.next = null;
     }
 }
