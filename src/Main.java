@@ -29,5 +29,7 @@ public class Main
         head.print();
         System.out.println("Print in reverse:");
         head.reversePrint();
+        System.out.println("Length of List:");
+        System.out.println(head.getLengthOfList());
     }
 }

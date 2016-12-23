@@ -46,6 +46,13 @@ public class LinkedList
 
     public int getLengthOfList()
     {
-        
+        if(next == null)
+        {
+            return 1;
+        }
+        else
+        {
+            return 1+next.getLengthOfList();
+        }
     }
 }
