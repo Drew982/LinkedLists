@@ -16,10 +16,18 @@ public class Main
         do
         {
             string = scanner.next(); //Pass data from terminal to program
-            LinkedList node = new LinkedList(string); //Holds new string passed in
-            head.add(node);
+            if(!string.equals("q"))
+            {
+                LinkedList node = new LinkedList(string); //Holds new string passed in
+                head.add(node);
+            }
         }
         while (!string.equalsIgnoreCase("q"));
         scanner.close();
+
+        System.out.println("Print forward:");
+        head.print();
+        System.out.println("Print in reverse:");
+        head.reversePrint();
     }
 }

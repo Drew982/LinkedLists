@@ -28,6 +28,24 @@ public class LinkedList
 
     public void print()
     {
-        System.out.println(name);
+        System.out.println(name); //Prints out head of list
+        if(next != null)
+        {
+            next.print();
+        }
+    }
+
+    public void reversePrint()
+    {
+        if (this.next != null)
+        {
+            this.next.reversePrint();
+        }
+        System.out.println(this.name);
+    }
+
+    public int getLengthOfList()
+    {
+        
     }
 }
