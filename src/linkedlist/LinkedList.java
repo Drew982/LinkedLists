@@ -13,4 +13,21 @@ public class LinkedList
         this.name = name;
         this.next = null;
     }
+
+    public void add(LinkedList node)
+    {
+        if(next == null)
+        {
+            this.next = node; //Added node to end of linked list
+        }
+        else
+        {
+            next.add(node);
+        }
+    }
+
+    public void print()
+    {
+        System.out.println(name);
+    }
 }
